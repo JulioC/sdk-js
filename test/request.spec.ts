@@ -74,7 +74,7 @@ describe("Request", () => {
 
       expect(client.api.xhr.request).to.have.been.calledWith({
         baseURL: "https://demo-api.getdirectus.com/testProject/",
-        data: {},
+        data: undefined,
         headers: { "X-Directus-Project": "testProject" },
         method: "get",
         params: {},
@@ -135,7 +135,7 @@ describe("Request", () => {
 
       expect(client.api.xhr.request).to.have.been.calledWith({
         baseURL: "https://demo-api.getdirectus.com/testProject/",
-        data: {},
+        data: undefined,
         headers: { "X-Directus-Project": "testProject" },
         method: "get",
         params: {
@@ -168,7 +168,7 @@ describe("Request", () => {
 
       expect(client.api.xhr.request).to.have.been.calledWith({
         baseURL: "https://demo-api.getdirectus.com/testProject/",
-        data: {},
+        data: undefined,
         headers: {
           Authorization: `Bearer ${client.config.token}`,
           "X-Directus-Project": "testProject",

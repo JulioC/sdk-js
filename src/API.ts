@@ -199,7 +199,7 @@ export class API implements IAPI {
     method: RequestMethod,
     endpoint: string,
     params: object = {},
-    data: object = {},
+    data?: object,
     noProject: boolean = false,
     headers: { [key: string]: string } = {},
     skipParseToJSON: boolean = false
